@@ -4,19 +4,20 @@
   "description": "Tracker - track your time",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "build -ml"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/eugenetsukanov/tracker",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Tracker"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "+1GTeam",
+  "license": "MIT",
   "devDependencies": {
-    "electron": "~1.6.2"
+    "electron": "~1.6.2",
+    "electron-builder": "^16.7.1"
+  },
+  "build": {
+    "appId": "plus.one.generation.tracker"
   }
 }
