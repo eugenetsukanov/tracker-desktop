@@ -5,19 +5,29 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "dist": "build -m"
+    "build": "build -m && build -l",
+    "build.osx": "build -m",
+    "build.linux": "build -l"
   },
   "repository": "https://github.com/eugenetsukanov/tracker-desktop",
   "keywords": [
     "Tracker"
   ],
-  "author": "+1GTeam",
+  "author": {
+    "name" : "+1GTeam",
+    "email" : "alexgkorsun@gmail.com"
+  },
   "license": "MIT",
   "devDependencies": {
-    "electron": "~1.6.2",
-    "electron-builder": "^16.7.1"
+    "electron": "^1.6.2",
+    "electron-builder": "^16.8.3"
   },
   "build": {
-    "appId": "plus.one.generation.tracker"
+    "appId": "plus.one.generation.tracker",
+    "linux": {
+      "target": [
+        "deb"
+      ]
+    }
   }
 }
